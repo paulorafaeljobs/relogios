@@ -1,0 +1,32 @@
+body{background-color: #FAF7F2;}
+*{font-family: 'Open Sans', sans-serif;font-family: 'Outfit', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Reem Kufi', sans-serif;font-family: 'Roboto', sans-serif;text-decoration: none;margin: 0;padding: 0;}
+
+.Texto-inicial{text-align:center;font-size:14px;line-height:30px;width:100%;background-color: #F09C75 ;color:white;}
+
+.header{padding: 0;margin: 0; background-color: #161A2D;width: 100%;justify-content:space-around; display: flex;align-items: center;}
+ul{display: flex;}
+li{padding: 5px;list-style: none;color: white;}
+li > a {color: white;}
+.logo{font-size: 50px;color: white;}
+
+.flexBox{margin: 0 auto;display: flex;flex-wrap: wrap;width: 70%;text-align: center;margin: auto;margin-top: 30px;}
+.flex_anuncio{background-color: white; flex-grow: 1;flex-shrink: 1;flex-basis: 200px;margin: 10px;width: 100%;text-align: center;height: 330px;border: 1px solid #F1EBD6;padding: 10px;}
+.flex-title{height: 50px;}
+.flex-value1{font-size: 25px;font-weight: bold;}
+.flex-value2{border: 1px solid #F1EBD6;margin-top: 5px;margin-bottom: 5px; font-size: 15px;padding: 5px;}
+.img_anuncio{width:150px;height: 150px; object-fit: cover;}
+.button-comprar{border: none;width: 130px;margin: 5px; padding:8px;background-color: black;color: white;}
+.-add{font-size: 13px; color: black;}
+
+footer {background-color: #EEEEEE;padding: 20px;margin-top: 100px;}
+.footer-flexbox{display: flex;flex-wrap: wrap;width: 70%;margin-top: 20px;margin: auto;}
+.footer-flex{flex-grow: 1;flex-shrink: 1;flex-basis: 100px;padding: 10px;}
+.footer-flex > p > img{height:30px;}
+.footer-flex > .title {font-size: 20px;font-weight: bold;margin-bottom: 20px;margin-top: 10px;}
+.logo-header{width: 30px;padding-right: 10px;}
+
+@media  screen and (max-width: 600px){
+    .header{display: block;justify-content: center;text-align: center;}
+    .Btn-best{display: none;}
+    ul > a {text-align: center;}
+}
