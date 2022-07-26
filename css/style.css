@@ -1,14 +1,13 @@
 body{background-color: #FAF7F2;}
 *{font-family: 'Open Sans', sans-serif;font-family: 'Outfit', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Reem Kufi', sans-serif;font-family: 'Roboto', sans-serif;text-decoration: none;margin: 0;padding: 0;}
 
-.Texto-inicial{text-align:center;font-size:14px;line-height:30px;width:100%;background-color: #F09C75 ;color:white;}
+.header-inicial{font-size:14px;line-height:30px;width:100%;background-color: #001932;color:white;display: flex;justify-content: space-evenly;}
 
-.header{padding: 0;margin: 0; background-color: #161A2D;width: 100%;justify-content:space-around; display: flex;align-items: center;}
+.header{padding: 0;margin: 0; background-color: #000000; width: 100%;justify-content:space-around; display: flex;align-items: center;}
 ul{display: flex;}
 li{padding: 5px;list-style: none;color: white;}
 li > a {color: white;}
-.logo{font-size: 50px;color: white;}
-
+.logo{font-size: 50px;color: white;margin-top: 15px;}
 .flexBox{margin: 0 auto;display: flex;flex-wrap: wrap;width: 70%;text-align: center;margin: auto;margin-top: 30px;}
 .flex_anuncio{background-color: white; flex-grow: 1;flex-shrink: 1;flex-basis: 200px;margin: 10px;width: 100%;text-align: center;height: 330px;border: 1px solid #F1EBD6;padding: 10px;}
 .flex-title{height: 50px;}
@@ -17,16 +16,46 @@ li > a {color: white;}
 .img_anuncio{width:150px;height: 150px; object-fit: cover;}
 .button-comprar{border: none;width: 130px;margin: 5px; padding:8px;background-color: black;color: white;}
 .-add{font-size: 13px; color: black;}
-
-footer {background-color: #EEEEEE;padding: 20px;margin-top: 100px;}
+footer {background-color: #EEEEEE;padding: 20px;margin-top: 100px;text-align: center;}
 .footer-flexbox{display: flex;flex-wrap: wrap;width: 70%;margin-top: 20px;margin: auto;}
 .footer-flex{flex-grow: 1;flex-shrink: 1;flex-basis: 100px;padding: 10px;}
 .footer-flex > p > img{height:30px;}
 .footer-flex > .title {font-size: 20px;font-weight: bold;margin-bottom: 20px;margin-top: 10px;}
-.logo-header{width: 30px;padding-right: 10px;}
+.footer-flex > p > img {padding: 10px;}
 
+.logo-header{width: 30px;padding-right: 10px;}
 @media  screen and (max-width: 600px){
     .header{display: block;justify-content: center;text-align: center;}
     .Btn-best{display: none;}
     ul > a {text-align: center;}
+}
+
+
+
+.overlay {height: 100%;width: 0;position: fixed;z-index: 1;top: 0;left: 0;background-color: rgb(0,0,0);background-color: rgba(0,0,0, 0.9);overflow-x: hidden;transition: 0.5s;}
+.overlay-content {position: relative;top: 15%;width: 100%;text-align: center;margin-top: 10px;}
+.overlay a {padding: 8px;text-decoration: none;font-size: 36px;color: #818181;display: block;transition: 0.5s;}
+#span {padding: 8px;text-decoration: none;font-size: 20px;color: #818181;display: block;transition: 0.5s;}
+.overlay a:hover, .overlay a:focus {color: #f1f1f1;}
+.overlay .closebtn {position: absolute;top: 20px;right: 45px;font-size: 60px;}
+.card{width: 84px;}
+.alfa{width: 350px;}
+#btn-comprar{border: none;width: 150px;height:50px;font-size:20px;background-color: white;color: black;}
+#nome{font-size:25px;}
+#valor1{font-size:20px;}
+#valor2{font-size:20px;}
+
+.row {margin: auto; display: flex;width:60%;text-align: left; flex-wrap: wrap;margin-top: 30px;}
+.row1 {flex: 40%;color: white;}
+.row2 {flex: 50%;margin-top: 20px;color: white;}
+
+@media  screen and (max-width: 600px){
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {font-size: 40px;top: 15px;right: 35px;}
+  .header{display: block;justify-content: center;text-align: center;}
+  .Btn-best{display: none;}
+  ul > a {text-align: center;}
+  .alfa{width:252px;}
+  .card{width: 60px;}
+  #btn-comprar{margin-top: 0px;}
 }

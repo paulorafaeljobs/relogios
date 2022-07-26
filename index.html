@@ -9,20 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@100&family=Raleway:wght@200;400&family=Reem+Kufi&family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/poupop.css">
-    <title>Relogios.com</title>
+    <title>Mundo dos Relógios</title>
 </head>
 <body>
-    <p class="Texto-inicial">FRETE GRÁTIS a partir de 2 unidade!</p>
+    <header class="header-inicial">
+        <p> (48) 99111-0330</p>
+        <p>Parcele em até 12x | Hoje seu frete sai de graça!</p>
+
+    </header>
     <header class="header">
-        <a class="logo" href="./">Relogios.com</a>
+        <a class="logo" href="./"> <img style="width: 200px;" src="logo.jpeg"> </a>
     </header>
 
     <div id="AbrirProduto" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <div class="contend">
-
+            <section class="row">
+                <div class="row1">
                     <img id="alfa" class="alfa">
                     <div style="margin: auto;">
                         <img class="card" id="img1">
@@ -30,13 +33,15 @@
                         <img class="card" id="img3">
                         <img class="card" id="img4">
                     </div>
+                </div>
+                <div class="row2">
                     <p id="nome"></p>
-                    <p id="valor1"></p>
                     <p id="valor2"></p>
+                    <p id="valor1"></p>
                     <button style="margin-top:30px;" id="btn-comprar">Fazer Pedido</button>
-                    <p style="margin-top:50px;margin-bottom: 50px;" id="info"></p>
-                
-            </div>
+                    <p style="margin-top:30px;margin-bottom: 50px;font-size: 17px;" id="info"></p>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -45,33 +50,22 @@
     <footer id="footer">
         <div class="footer-flexbox">
             <div class="footer-flex"> 
-                <p class="title">Navegação</p>
-                <p>Quem somos</p>
-                <p>Perguntas Frequentes</p>
-                <p>Troca, Devolução e Garantia</p>
-            </div>
-            <div class="footer-flex"> 
                 <p class="title">Contato</p>
-                <p>+55 000 0000 00000</p>
-                <p>suporte@relogio.com.br</p>
+                <p>+55 27 992613371</p>
+                <p>paulo.rafael.jobs@gmail.com</p>
             </div>
             <div class="footer-flex"> 
                 <p class="title">Siga-nos</p>
-                <p>
-                    <img style="padding: 10px;" src="img/logo_facebook.png">
-                    <img style="padding: 10px;" src="img/logo_instagram.png">
-                    <img style="padding: 10px;" src="img/logo_twiter.png">
-                </p>
+                <p><img src="img/logo_facebook.png"><img src="img/logo_instagram.png"><img src="img/logo_twiter.png"></p>
             </div>
             <div class="footer-flex"> 
                 <p class="title">Desenvolvedor</p>
                 <p>Paulo Rafael</p>
-                <p>www.paulorafaelweb.com</p>
+                <p>paulorafaelweb.vercel.app</p>
                 <p>27 992613371</p>
             </div>
         </div> 
     </footer>
-
     <script src="js/produtos.js"></script>
     <script src="js/app.js"></script>
 </body>
